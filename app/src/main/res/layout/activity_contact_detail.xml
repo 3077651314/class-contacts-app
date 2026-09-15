@@ -57,4 +57,12 @@
         android:layout_height="wrap_content"
         android:text="编辑"
         android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除联系人"
+        android:backgroundTint="#D32F2F"
+        android:layout_marginTop="8dp" />
 </LinearLayout>

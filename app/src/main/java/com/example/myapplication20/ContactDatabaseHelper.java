@@ -53,6 +53,13 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
         return id;
     }
 
+    public int deleteContact(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rows = db.delete(TABLE_CONTACTS, COLUMN_ID + " = ?", new String[]{String.valueOf(id)});
+        db.close();
+        return rows;
+    }
+
     public List<Contact> getAllContacts() {
         List<Contact> contacts = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();

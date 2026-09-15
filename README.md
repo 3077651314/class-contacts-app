@@ -4,16 +4,18 @@
 
 ## 界面预览
 
-| 登录 | 主页 | 联系人列表 | 联系人详情 |
-|:---:|:---:|:---:|:---:|
-| ![登录](screenshots/01-login.png) | ![主页](screenshots/02-home.png) | ![列表](screenshots/03-list.png) | ![详情](screenshots/04-detail.png) |
+| 登录 | 主页 | 联系人列表 | 联系人详情 | 删除确认 | 删除后列表 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| ![登录](screenshots/01-login.png) | ![主页](screenshots/02-home.png) | ![列表](screenshots/03-list.png) | ![详情](screenshots/04-detail.png) | ![删除确认](screenshots/05-delete-confirm.png) | ![删除后](screenshots/06-list-after-delete.png) |
 
 > 截图取自 Android 11（API 30）模拟器实机运行，列表中的联系人数据为演示用示例数据。
+> 最后两张演示删除流程：详情页点「删除联系人」→ 二次确认 → 列表自动刷新（5 条变 4 条）。
 
 ## 功能
 
 - 6 个页面：登录、主页、联系人列表、详情、新增、编辑
 - 联系人完整增删改查，数据存本地 SQLite
+- 删除联系人带 `AlertDialog` 二次确认，删除后列表自动刷新
 - 按姓名 / 电话模糊搜索
 - 4 种排序方式
 - 一键拨号、复制号码到剪贴板
@@ -60,7 +62,7 @@ app/src/main/java/com/example/myapplication20/
 
 ## 代码统计
 
-- Java 代码 655 行 / 12 个文件
+- Java 代码 682 行 / 12 个文件
 - 6 个 Activity，1 张 SQLite 表
 
 ## 说明
