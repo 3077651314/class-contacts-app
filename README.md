@@ -2,6 +2,14 @@
 
 一个用 Java 写的 Android 通讯录应用，覆盖从登录到增删改查的完整闭环。
 
+## 界面预览
+
+| 登录 | 主页 | 联系人列表 | 联系人详情 |
+|:---:|:---:|:---:|:---:|
+| ![登录](screenshots/01-login.png) | ![主页](screenshots/02-home.png) | ![列表](screenshots/03-list.png) | ![详情](screenshots/04-detail.png) |
+
+> 截图取自 Android 11（API 30）模拟器实机运行，列表中的联系人数据为演示用示例数据。
+
 ## 功能
 
 - 6 个页面：登录、主页、联系人列表、详情、新增、编辑
